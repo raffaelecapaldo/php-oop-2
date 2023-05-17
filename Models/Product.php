@@ -8,7 +8,7 @@ include_once __DIR__. '/../Models/BedProduct.php';
 
 class Product{
     public $name, $category, $image;
-    protected $price;
+    public $price;
 
 
     /**
