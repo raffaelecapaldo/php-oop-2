@@ -8,8 +8,10 @@ include __DIR__ . '/Database/db.php';
         <div class="row">
             <?php foreach ($products as $product) : ?>
                 <div class="col-6">
-                    <div class="card">
+                    <div class="card <?= strtolower($product->type); ?>">
+                        <div class="img-card">
                         <img src="<?= $product->image; ?>" class="card-img-top" alt="<?= $product->name; ?>">
+                        </div>
                         <div class="card-body">
                                     <h5 class="card-title"><?= $product->name; ?></h5>
                                     <div class="card-text">

@@ -7,7 +7,7 @@ include_once __DIR__. '/../Models/BedProduct.php';
 
 
 class Product{
-    public $name, $category, $image;
+    public $name, $category, $image, $brand;
     public $price;
 
 
@@ -18,12 +18,14 @@ class Product{
      * @param Category $category
      * @param string $image
      * @param float $price
+     * @param string $brand
      */
-    function __construct(string $name, Category $category, string $image, float $price)
+    function __construct(string $brand, string $name, Category $category, string $image, float $price)
     {
         $this->name = $name;
         $this->category = $category;
         $this->image = $image;
+        $this->brand = $brand;
         $this->price = $this->validatePrice($price);
     }
 

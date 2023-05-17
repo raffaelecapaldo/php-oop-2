@@ -13,11 +13,12 @@ class ToyProduct extends Product{
      * @param string $image
      * @param float $price
      * @param string $material
+     * @param string $brand
      * @param boolean $requireSupervision
      */
-    function __construct(string $name, Category $category, string $image, float $price, string $material, bool $requireSupervision = false)
+    function __construct(string $brand, string $name, Category $category, string $image, float $price, string $material, bool $requireSupervision = false)
     {
-        parent::__construct($name, $category, $image, $price);
+        parent::__construct($name, $category, $image, $price, $brand);
         $this->material = $material;
         $this->requireSupervision = $requireSupervision;
         

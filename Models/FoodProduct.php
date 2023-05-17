@@ -12,11 +12,12 @@ class FoodProduct extends Product{
      * @param string $image
      * @param float $price
      * @param string $expdate
+     *  @param string $brand
      * @param float $weight
      */
-    function __construct(string $name, Category $category, string $image, float $price, string $expdate, float $weight)
+    function __construct(string $brand, string $name, Category $category, string $image, float $price, string $expdate, float $weight)
     {
-        parent::__construct($name, $category, $image, $price);
+        parent::__construct($name, $category, $image, $price, $brand);
         $this->expdate = $expdate;
         $this->weight = $this->addKg($weight);
     }

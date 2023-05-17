@@ -10,5 +10,18 @@
 }
 
 .card {
-    width: 400px;
+    width: 304px;
+    color:white;
+}
+
+.food {
+   background-color: #097969;
+}
+
+.bed {
+    background-color: #817611;
+}
+
+.toy {
+    background-color: rgb(82, 5, 5);
 }
