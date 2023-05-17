@@ -16,7 +16,7 @@ class ToyProduct extends Product{
     function __construct(string $name, Category $category, string $image, float $price, string $material, bool $requireSupervision = false)
     {
         parent::__construct($name, $category, $image, $price);
-        $this->$material = $material;
+        $this->material = $material;
         $this->requireSupervision = $requireSupervision;
         
     }

@@ -2,6 +2,8 @@
 include_once __DIR__.'/../Models/Category.php';
 include_once __DIR__. '/../Models/FoodProduct.php';
 include_once __DIR__. '/../Models/ToyProduct.php';
+include_once __DIR__. '/../Models/BedProduct.php';
+
 
 
 class Product{

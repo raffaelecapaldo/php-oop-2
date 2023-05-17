@@ -8,6 +8,6 @@ $categories = [
 ];
 
 $products = [
-    new ToyProduct('Cibo', $categories['dogs'], 'image', 5.35, 'velluto')
+    new BedProduct('Cibo', $categories['dogs'], 'image', 5.35, 'velluto', 5)
 ];
 var_dump($products[0]);
