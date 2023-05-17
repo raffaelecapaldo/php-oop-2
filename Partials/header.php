@@ -1,5 +1,5 @@
 <header class="p-1 mb-3 text-bg-dark">
-    <div class="container pb-3">
+    <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
           <img class="logo" src="https://www.creativefabrica.com/wp-content/uploads/2021/04/10/Pet-shop-animals-logo-template-Graphics-10636906-1-580x386.png" alt="">
