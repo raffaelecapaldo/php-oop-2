@@ -11,20 +11,27 @@ include __DIR__ . '/Database/db.php';
                     <div class="card">
                         <img src="<?= $product->image; ?>" class="card-img-top" alt="<?= $product->name; ?>">
                         <div class="card-body">
-                            <div class="info d-flex justify-content-between">
-                                <div class="info-text">
                                     <h5 class="card-title"><?= $product->name; ?></h5>
                                     <div class="card-text">
+                                    <img class="icon" src="<?= $product->category->icon; ?>" alt="">
+
                                         <p>Category: <?= $product->category->name; ?></p>
                                         <p>Type: <?= $product->type; ?></p>
                                         <p>Price: <?= $product->price; ?></p>
-
+                                        <?php if (is_a($product, 'FoodProduct')) : ?>
+                                            <p>Expiration date: <?= $product->expdate; ?> </p>
+                                            <p>Weight: <?= $product->weight; ?> </p>
+                                            <?php endif; ?> 
+                                            <?php if (is_a($product, 'BedProduct')) : ?>
+                                            <p>Fabric: <?= $product->fabric; ?> </p>
+                                            <p>Wash at: <?= $product->washingTemperature; ?> </p>
+                                            <?php endif; ?> 
+                                            <?php if (is_a($product, 'ToyProduct')) : ?>
+                                            <p>Material: <?= $product->material; ?> </p>
+                                            <p>Supervision <?= $product->requireSupervision; ?> </p>
+                                            <?php endif; ?> 
                                     </div>
-                                </div>
-                                <div class="icons-info">
-                                    <img class="icon" src="<?= $product->category->icon; ?>" alt="">
-                                </div>
-                            </div>
+                             
                         </div>
                     </div>
                 </div>
