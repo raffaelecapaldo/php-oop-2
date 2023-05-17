@@ -1,8 +1,10 @@
 <?php
 include __DIR__.'/../Models/Category.php';
+include __DIR__. '/../Models/FoodProduct.php';
+
 class Product{
     public $name, $category, $image;
-    private $price;
+    protected $price;
 
 
     /**
