@@ -3,6 +3,8 @@ include_once __DIR__ . '/../Models/Product.php';
 class BedProduct extends Product
 {
     public $fabric, $washingTemperature;
+    public $type = 'Bed';
+
     /**
      * BedProduct summary
      *

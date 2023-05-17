@@ -2,6 +2,8 @@
 include_once __DIR__. '/../Models/Product.php';
 class ToyProduct extends Product{
     public $material, $requireSupervision;
+    public $type = 'Toy';
+
 
     /**
      * Summary of ToyProduct

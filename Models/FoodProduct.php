@@ -2,6 +2,7 @@
 include_once __DIR__. '/../Models/Product.php';
 class FoodProduct extends Product{
     public $expdate, $weight;
+    public $type = 'Food';
 
     /**
      * Summary of FoodProduct
