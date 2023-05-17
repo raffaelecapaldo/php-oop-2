@@ -5,6 +5,10 @@
     top:0;
 }
 
+.logo {
+    width: 100px;
+}
+
 .card-text {
     position:relative;
 }
@@ -28,7 +32,7 @@
     background-color: white;
 }
 
-.food {
+.food, .myfooter {
    background-color: #097969;
 }
 
@@ -39,3 +43,4 @@
 .toy {
     background-color: rgb(82, 5, 5);
 }
+
