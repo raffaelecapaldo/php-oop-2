@@ -16,7 +16,7 @@ include __DIR__ . '/Database/db.php';
                                     <h5 class="card-title"><?= $product->name; ?></h5>
                                     <div class="card-text">
                                     <img class="icon" src="<?= $product->category->icon; ?>" alt="">
-
+                                        <p>Maker: <?= $product->brand ?></p>
                                         <p>Category: <?= $product->category->name; ?></p>
                                         <p>Type: <?= $product->type; ?></p>
                                         <p>Price: <?= $product->price; ?></p>

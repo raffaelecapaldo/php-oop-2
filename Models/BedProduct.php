@@ -18,7 +18,7 @@ class BedProduct extends Product
      */
     function __construct(string $brand, string $name, Category $category, string $image, float $price, string $fabric, int $washingTemperature)
     {
-        parent::__construct($name, $category, $image, $price, $brand);
+        parent::__construct($brand, $name, $category, $image, $price);
         $this->fabric = $fabric;
         $this->washingTemperature = $washingTemperature . '°';
     }
