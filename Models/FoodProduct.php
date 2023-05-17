@@ -1,5 +1,5 @@
 <?php
-include __DIR__. '/../Models/Product.php';
+include_once __DIR__. '/../Models/Product.php';
 class FoodProduct extends Product{
     public $expdate, $weight;
 

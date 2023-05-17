@@ -1,5 +1,5 @@
 <?php 
-include __DIR__.'/../Models/Product.php';
+include_once __DIR__.'/../Models/Product.php';
 
 $categories = [
     'dogs' => new Category('Dogs', 'icondog'),
@@ -8,6 +8,6 @@ $categories = [
 ];
 
 $products = [
-    new Product('Cibo', $categories['dogs'], 'image', 5.35)
+    new ToyProduct('Cibo', $categories['dogs'], 'image', 5.35, 'velluto')
 ];
 var_dump($products[0]);
