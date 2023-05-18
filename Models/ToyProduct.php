@@ -1,6 +1,9 @@
 <?php
 include_once __DIR__. '/../Models/Product.php';
+include_once __DIR__. '/../Traits/ObjectColor.php';
+
 class ToyProduct extends Product{
+    use ObjectColor;
     public $material, $requireSupervision;
     public $type = 'Toy';
 

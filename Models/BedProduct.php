@@ -1,7 +1,11 @@
 <?php
 include_once __DIR__ . '/../Models/Product.php';
+include_once __DIR__. '/../Traits/ObjectColor.php';
+
 class BedProduct extends Product
 {
+    use ObjectColor;
+
     public $fabric, $washingTemperature;
     public $type = 'Bed';
 

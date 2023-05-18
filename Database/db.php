@@ -1,5 +1,5 @@
-<?php 
-include_once __DIR__.'/../Models/Product.php';
+<?php
+include_once __DIR__ . '/../Models/Product.php';
 
 $categories = [
     'dogs' => new Category('Dogs', 'https://png.pngtree.com/png-vector/20230114/ourmid/pngtree-cute-dog-sticker-png-image_6562190.png'),
@@ -24,3 +24,31 @@ $products = [
 
 
 ];
+
+// Extra settings
+try {
+    $products[0]->setColor('Grey');
+} catch (Exception $e) {
+    echo 'Expection: ' . $e->getMessage();
+}
+
+//Scritto appositamente Pink con 1, simulazione di errore
+try {
+    $products[1]->setColor('P1nk');
+} catch (Exception $e) {
+    echo 'Expection: ' . $e->getMessage();
+}
+
+try {
+    $products[3]->setColor('Brown');
+} catch (Exception $e) {
+    echo 'Expection: ' . $e->getMessage();
+}
+
+try {
+    $products[5]->setColor('Pink');
+} catch (Exception $e) {
+    echo 'Expection: ' . $e->getMessage();
+}
+
+
